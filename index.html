@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Ganeshappa Attikatti | Digital Marketing & Growth Strategist</title>
+  <meta name="description" content="Portfolio of Abhishek Ganeshappa Attikatti - Certified Digital Marketing Specialist & Organic Growth Strategist based in Bengaluru. Specializing in Technical SEO, Google Ads, Meta Ads, and GA4 Analytics." />
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            accent: {
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+            }
+          },
+          boxShadow: {
+            'glow-indigo': '0 0 35px -5px rgba(99, 102, 241, 0.25)',
+            'glow-card': '0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(255, 255, 255, 0.05)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom glow backgrounds & utility details */
+    .bg-mesh {
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.08) 0px, transparent 50%);
+    }
+    
+    .glass-nav {
+      background: rgba(2, 6, 23, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card-glass {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .card-glass:hover {
+      border-color: rgba(99, 102, 241, 0.4);
+    }
+
+    .tool-pill {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.2s ease;
+    }
+    .tool-pill:hover {
+      border-color: rgba(99, 102, 241, 0.5);
+      background: rgba(30, 41, 59, 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px -3px rgba(99, 102, 241, 0.2);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #020617;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- Ambient Light Gradients -->
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 right-10 w-[500px] h-[500px] bg-accent-500/10 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-1/4 left-1/3 w-96 h-96 bg-blue-500/5 rounded-full blur-[100px]"></div>
+  </div>
+
+  <!-- STICKY HEADER NAVIGATION -->
+  <header class="sticky top-0 z-50 glass-nav transition-all duration-300" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="group flex items-center gap-2.5 focus:outline-none" aria-label="Abhishek Homepage">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-500 to-accent-500 flex items-center justify-center font-display font-extrabold text-white text-lg shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform duration-200">
+          A
+        </div>
+        <span class="font-display font-bold text-xl tracking-tight text-white group-hover:text-brand-400 transition-colors">
+          Abhishek<span class="text-brand-500">.</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Desktop Navigation">
+        <a href="#about" class="hover:text-white hover:text-brand-400 transition-colors duration-150">About</a>
+        <a href="#skills" class="hover:text-white hover:text-brand-400 transition-colors duration-150">Skills &amp; Tools</a>
+        <a href="#case-studies" class="hover:text-white hover:text-brand-400 transition-colors duration-150">Case Studies</a>
+        <a href="#experience" class="hover:text-white hover:text-brand-400 transition-colors duration-150">Experience</a>
+        <a href="#contact" class="hover:text-white hover:text-brand-400 transition-colors duration-150">Contact</a>
+      </nav>
+
+      <!-- Desktop Header CTAs -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="tel:+918050832015" class="text-xs text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-lg bg-slate-900 border border-slate-800">
+          <i class="fa-solid fa-phone text-brand-400 text-xs"></i>
+          <span>+91 8050832015</span>
+        </a>
+        <a href="mailto:abhishekattikatti.17@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hi%20Abhishek,%20I%20would%20like%20to%20discuss%20a%20marketing%20role/project." class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-accent-600 hover:from-brand-500 hover:to-accent-500 text-white font-medium text-sm shadow-md shadow-brand-500/20 hover:shadow-brand-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
+          <span>Get In Touch</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 px-6 pt-4 pb-6 transition-all duration-200">
+      <nav class="flex flex-col gap-4 text-base font-medium text-slate-300" aria-label="Mobile Navigation">
+        <a href="#about" class="mobile-nav-link py-2 border-b border-slate-850 hover:text-brand-400">About</a>
+        <a href="#skills" class="mobile-nav-link py-2 border-b border-slate-850 hover:text-brand-400">Skills &amp; Tools</a>
+        <a href="#case-studies" class="mobile-nav-link py-2 border-b border-slate-850 hover:text-brand-400">Case Studies</a>
+        <a href="#experience" class="mobile-nav-link py-2 border-b border-slate-850 hover:text-brand-400">Experience</a>
+        <a href="#contact" class="mobile-nav-link py-2 border-b border-slate-850 hover:text-brand-400">Contact</a>
+      </nav>
+      <div class="mt-6 flex flex-col gap-3">
+        <a href="tel:+918050832015" class="w-full text-center py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 text-sm flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-brand-400"></i>
+          <span>+91 8050832015</span>
+        </a>
+        <a href="mailto:abhishekattikatti.17@gmail.com" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-600 to-accent-600 text-white font-medium text-sm flex items-center justify-center gap-2">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Get In Touch</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="flex-grow z-10">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28 bg-mesh overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Left Column: Bio & CTAs -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-200 shadow-sm">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              </span>
+              <span>Available for Digital Marketing Roles</span>
+              <span class="text-slate-600">|</span>
+              <span class="text-brand-400">Immediate Joiner</span>
+            </div>
+
+            <!-- Name and Main Title -->
+            <div class="space-y-3">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold tracking-tight text-white leading-[1.15]">
+                Hi, I'm <br class="hidden sm:inline" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-violet-300 to-indigo-200">
+                  Abhishek Ganeshappa Attikatti
+                </span>
+              </h1>
+              <p class="text-lg sm:text-xl font-semibold text-brand-300/90 tracking-wide font-display">
+                Digital Marketing Professional &amp; Organic Growth Strategist
+              </p>
+            </div>
+
+            <!-- Bio -->
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+              Certified digital marketing specialist trained at <strong class="text-white font-medium">Digital Market Academy, Bengaluru</strong>. Proficient in <span class="text-slate-100 font-medium">technical &amp; on-page SEO</span>, <span class="text-slate-100 font-medium">Google Ads (PPC)</span>, <span class="text-slate-100 font-medium">Meta Ads</span>, <span class="text-slate-100 font-medium">Local SEO</span>, and <span class="text-slate-100 font-medium">GA4 performance tracking</span>. Dedicated to turning search intent and targeted ad traffic into measurable business revenue.
+            </p>
+
+            <!-- Key Quick Value Highlights -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 pb-2">
+              <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80">
+                <div class="text-brand-400 font-bold text-lg font-display">100%</div>
+                <div class="text-xs text-slate-400 mt-0.5">Audit &amp; CWV Focus</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80">
+                <div class="text-accent-400 font-bold text-lg font-display">Full-Funnel</div>
+                <div class="text-xs text-slate-400 mt-0.5">Meta &amp; Google PPC</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80 col-span-2 sm:col-span-1">
+                <div class="text-emerald-400 font-bold text-lg font-display">GA4 Tracked</div>
+                <div class="text-xs text-slate-400 mt-0.5">Data-driven ROI</div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="#case-studies" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-accent-600 text-white font-semibold text-sm sm:text-base shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all duration-200 inline-flex items-center gap-2.5">
+                <span>View Case Studies</span>
+                <i class="fa-solid fa-arrow-down text-xs"></i>
+              </a>
+
+              <a href="tel:+918050832015" class="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-850 text-slate-200 hover:text-white border border-slate-800 hover:border-slate-700 font-medium text-sm sm:text-base transition-all duration-200 inline-flex items-center gap-2.5">
+                <i class="fa-solid fa-phone text-brand-400"></i>
+                <span>Contact / Call: +91 8050832015</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Right Column: Floating Visual Showcase (No Frame, Transparent Background) -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-[460px] flex items-center justify-center">
+              
+              <!-- Ambient Subtle Radial Glow behind the artwork -->
+              <div class="absolute w-80 h-80 bg-gradient-to-tr from-brand-600/20 via-accent-600/20 to-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+              <!-- Transparent Cutout Image - No Frame, No Borders, Seamless Floating -->
+              <img 
+                src="abhishek-hero-transparent.png" 
+                alt="Abhishek Ganeshappa Attikatti - Digital Marketing Professional" 
+                class="relative z-10 w-full h-auto object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] hover:scale-[1.02] transition-transform duration-300"
+                loading="eager"
+              />
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-slate-900/40 border-y border-slate-800/60 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+              <i class="fa-solid fa-user-check"></i>
+              Professional Profile
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
+              Bridging Strategic Intent With Precision Execution
+            </h2>
+            <p class="text-slate-300 leading-relaxed text-base">
+              I am an energetic digital marketing practitioner based in Bengaluru with a background in <strong class="text-white">Economics</strong> and extensive practical training from <strong class="text-brand-300">Digital Market Academy (DMA), Bengaluru</strong>.
+            </p>
+            <p class="text-slate-400 leading-relaxed text-sm">
+              My approach connects data-driven technical analysis with customer-centric marketing psychology. Rather than just burning ad budget or chasing vanity traffic, I focus on ranking for search terms that carry real buyer intent, building tight negative keyword filters to cut ad waste, and architecting local search signals that drive phone calls and walk-ins.
+            </p>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 flex items-center gap-1.5">
+                <i class="fa-solid fa-certificate text-brand-400"></i> DMA Bengaluru Certified
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 flex items-center gap-1.5">
+                <i class="fa-solid fa-graduation-cap text-accent-400"></i> BA Economics Background
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60 flex items-center gap-1.5">
+                <i class="fa-solid fa-bolt text-amber-400"></i> AI-Powered Prompt Workflows
+              </span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            
+            <div class="p-6 rounded-2xl card-glass space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white font-display">Technical Search Engine First</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Fixing crawl errors, indexing bottlenecks, schema markup deficiencies, and Core Web Vitals to provide search engine bots and users an effortless journey.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl card-glass space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-accent-500/20 text-accent-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-coins"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white font-display">Zero-Waste Paid Acquisition</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Structuring Google Ads with proactive negative keyword scrubs and Meta Ads with TOFU/MOFU/BOFU audience segmentation to maximize ROAS.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl card-glass space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white font-display">Local Domination &amp; GBP</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Optimizing Google Business Profile listings, securing NAP citation uniformity, and using geo-targeted local landing pages for high "near me" map visibility.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl card-glass space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-chart-column"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white font-display">Actionable GA4 Insights</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Implementing custom event tracking and conversion funnels in GA4 so marketing decisions are backed by statistical confidence rather than guesswork.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE COMPETENCIES & TOOL STACK GRID WITH REAL BRAND LOGOS -->
+    <section id="skills" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+            <i class="fa-solid fa-layer-group"></i> Core Stack &amp; Tool Ecosystem
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
+            Competencies &amp; Real Industry Tool Stack
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            Hands-on daily execution using market-standard platforms for technical audits, paid ads optimization, local search signals, and analytics attribution.
+          </p>
+        </div>
+
+        <!-- Real Brand Logos Ecosystem Showcase Strip -->
+        <div class="mb-14 p-6 sm:p-8 rounded-3xl card-glass border border-slate-800 shadow-xl">
+          <div class="flex items-center justify-between pb-5 border-b border-slate-800 mb-6">
+            <div>
+              <span class="text-xs font-bold font-display uppercase tracking-wider text-slate-300 flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-brand-400"></i>
+                Certified Tool Ecosystem &amp; Enterprise Platforms
+              </span>
+              <p class="text-xs text-slate-400 mt-1">Direct experience across organic, performance, geo, and design software suites</p>
+            </div>
+            <span class="hidden sm:inline-block text-xs font-mono px-3 py-1 rounded-full bg-brand-950 text-brand-300 border border-brand-800/60">
+              17 Verified Platforms
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">
+            
+            <!-- 1. Screaming Frog -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="14" fill="#0d1f0d" stroke="#5da92b" stroke-width="1.5"/>
+                  <path d="M9 13c0-3 2.5-4.8 5-4.3 1 .2 1.5.5 2 1 .5-.5 1-.8 2-1 2.5-.5 5 1.3 5 4.3 0 2-1 3.5-2.5 4.5C21.5 19 22 21 21 23c-1.2 2-3.8 2.5-5 2.5s-3.8-.5-5-2.5c-1-2-.5-4 .5-5.5C10 16.5 9 15 9 13z" fill="#6BB338"/>
+                  <circle cx="12" cy="12" r="2.2" fill="#FFFFFF"/>
+                  <circle cx="12" cy="12" r="1.1" fill="#000000"/>
+                  <circle cx="20" cy="12" r="2.2" fill="#FFFFFF"/>
+                  <circle cx="20" cy="12" r="1.1" fill="#000000"/>
+                  <ellipse cx="16" cy="19.5" rx="3.5" ry="2.2" fill="#081008"/>
+                  <path d="M14 18c1 .5 3 .5 4 0" stroke="#E1251B" stroke-width="0.8"/>
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Screaming Frog</div>
+                <div class="text-[10px] text-emerald-400">Crawler Audit</div>
+              </div>
+            </div>
+
+            <!-- 2. Google Search Console -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-search-console/default.svg" alt="Google Search Console" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Search Console</div>
+                <div class="text-[10px] text-blue-400">Google GSC</div>
+              </div>
+            </div>
+
+            <!-- 3. Ahrefs -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/ahrefs/default.svg" alt="Ahrefs" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Ahrefs</div>
+                <div class="text-[10px] text-amber-400">Backlinks &amp; KW</div>
+              </div>
+            </div>
+
+            <!-- 4. Ubersuggest -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="5" fill="#FF5B00"/>
+                  <path d="M7 6v6.8a5 5 0 0010 0V6h-2.8v6.8a2.2 2.2 0 01-4.4 0V6H7z" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Ubersuggest</div>
+                <div class="text-[10px] text-orange-400">Keyword Intel</div>
+              </div>
+            </div>
+
+            <!-- 5. PageSpeed Insights -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/pagespeed-insights/default.svg" alt="PageSpeed Insights" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">PageSpeed</div>
+                <div class="text-[10px] text-blue-400">Core Web Vitals</div>
+              </div>
+            </div>
+
+            <!-- 6. Google Ads Manager -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-ads/default.svg" alt="Google Ads Manager" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Google Ads</div>
+                <div class="text-[10px] text-yellow-400">Search PPC</div>
+              </div>
+            </div>
+
+            <!-- 7. Meta Ads Manager -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/meta/default.svg" alt="Meta Ads Manager" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Meta Ads</div>
+                <div class="text-[10px] text-blue-400">IG &amp; FB Funnels</div>
+              </div>
+            </div>
+
+            <!-- 8. Meta Business Suite -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/meta/default.svg" alt="Meta Business Suite" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Business Suite</div>
+                <div class="text-[10px] text-cyan-400">Meta Publishing</div>
+              </div>
+            </div>
+
+            <!-- 9. Google Keyword Planner -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-ads/default.svg" alt="Google Keyword Planner" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Keyword Planner</div>
+                <div class="text-[10px] text-yellow-400">PPC Volume</div>
+              </div>
+            </div>
+
+            <!-- 10. Google Business Profile -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 8l1.5-4h15L21 8H3z" fill="#4285F4"/>
+                  <path d="M3 8c0 1.1.9 2 2 2s2-.9 2-2H3z" fill="#34A853"/>
+                  <path d="M7 8c0 1.1.9 2 2 2s2-.9 2-2H7z" fill="#FBBC05"/>
+                  <path d="M11 8c0 1.1.9 2 2 2s2-.9 2-2h-4z" fill="#EA4335"/>
+                  <path d="M15 8c0 1.1.9 2 2 2s2-.9 2-2h-4z" fill="#4285F4"/>
+                  <path d="M19 8c0 1.1.9 2 2 2v0c1.1 0 2-.9 2-2h-4z" fill="#34A853"/>
+                  <rect x="4" y="10" width="16" height="10" rx="1" fill="#0A0F1D" stroke="#4285F4" stroke-width="1"/>
+                  <path d="M13.5 15h-2.5v-1.5h4c.1.4.1.8.1 1.2 0 1.8-1.2 3.1-3.1 3.1-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3c.9 0 1.6.3 2.2.9l-1 1c-.3-.3-.7-.5-1.2-.5-1 0-1.8.8-1.8 1.9s.8 1.9 1.8 1.9c.9 0 1.4-.5 1.5-1.4z" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Google Business</div>
+                <div class="text-[10px] text-blue-400">Maps &amp; GBP</div>
+              </div>
+            </div>
+
+            <!-- 11. Schema.org (JSON-LD) -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="5" fill="#0B61A4"/>
+                  <circle cx="7" cy="8" r="2.3" fill="#FFFFFF"/>
+                  <circle cx="17" cy="8" r="2.3" fill="#FFFFFF"/>
+                  <circle cx="12" cy="16" r="2.3" fill="#FF5C35"/>
+                  <path d="M8.5 9.5l3.8 5M15.5 9.5l-3.8 5M9.2 8h5.6" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Schema.org</div>
+                <div class="text-[10px] text-indigo-400">JSON-LD Data</div>
+              </div>
+            </div>
+
+            <!-- 12. Google Maps API -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-maps/default.svg" alt="Google Maps API" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Google Maps</div>
+                <div class="text-[10px] text-emerald-400">Geo Discovery</div>
+              </div>
+            </div>
+
+            <!-- 13. Local Citations -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="5" fill="#0A0F1D" stroke="#F59E0B" stroke-width="1.2"/>
+                  <path d="M12 4l2.4 4.8 5.3.8-3.8 3.7 1 5.3-4.9-2.5-4.9 2.5 1-5.3-3.8-3.7 5.3-.8L12 4z" fill="#F59E0B"/>
+                  <circle cx="12" cy="11" r="2" fill="#0A0F1D"/>
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Local Citations</div>
+                <div class="text-[10px] text-amber-400">NAP Uniformity</div>
+              </div>
+            </div>
+
+            <!-- 14. Google Analytics 4 -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="14" width="4" height="7" rx="2" fill="#F9AB00"/>
+                  <rect x="10" y="8" width="4" height="13" rx="2" fill="#E37400"/>
+                  <rect x="18" y="3" width="4" height="18" rx="2" fill="#E37400"/>
+                  <path d="M4 14c0-4.418 3.582-8 8-8v0c4.418 0 8 3.582 8 8" stroke="#F9AB00" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">GA4 Analytics</div>
+                <div class="text-[10px] text-orange-400">Attribution ROI</div>
+              </div>
+            </div>
+
+            <!-- 15. Canva Pro -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/canva/default.svg" alt="Canva Pro" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Canva Pro</div>
+                <div class="text-[10px] text-cyan-400">Ad Creatives</div>
+              </div>
+            </div>
+
+            <!-- 16. Figma -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/figma/default.svg" alt="Figma" class="w-5 h-5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">Figma</div>
+                <div class="text-[10px] text-purple-400">UI &amp; Landing Page</div>
+              </div>
+            </div>
+
+            <!-- 17. ChatGPT / Gemini AI -->
+            <div class="tool-pill p-3 rounded-2xl flex items-center gap-3 col-span-2 sm:col-span-1">
+              <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-center flex-shrink-0 gap-1">
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/openai-chatgpt/default.svg" alt="OpenAI (ChatGPT)" class="w-3.5 h-3.5 object-contain" />
+                <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/gemini/default.svg" alt="Gemini" class="w-3.5 h-3.5 object-contain" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs font-semibold text-white truncate">ChatGPT / Gemini</div>
+                <div class="text-[10px] text-teal-400">AI Prompt Logic</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4-Card Grid with Embedded Real Logos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Card 1: SEO -->
+          <div class="rounded-2xl p-7 card-glass transition-all duration-300 hover:shadow-glow-indigo flex flex-col justify-between group">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl border border-indigo-500/20 group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-800/60">
+                  Organic Growth
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold font-display text-white group-hover:text-brand-300 transition-colors">
+                  SEO &amp; Technical Site Architecture
+                </h3>
+                <p class="text-slate-400 text-sm mt-1.5">
+                  End-to-end search engine optimization designed to maximize organic crawlability, indexation, and top SERP rankings.
+                </p>
+              </div>
+
+              <div class="space-y-2.5">
+                <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Key Capabilities</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-brand-400 text-xs"></i>
+                    <span><strong>Technical Audits:</strong> Crawl error diagnosis, redirect loops &amp; canonical hygiene</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-brand-400 text-xs"></i>
+                    <span><strong>On-Page SEO:</strong> Title tags, meta descriptions, semantic H1-H3 structure &amp; keyword density</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-brand-400 text-xs"></i>
+                    <span><strong>Keyword Mapping:</strong> Search intent clustering, content gap identification &amp; page alignment</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-brand-400 text-xs"></i>
+                    <span><strong>Site Architecture:</strong> Internal link equity distribution &amp; XML sitemap configuration</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-brand-400 text-xs"></i>
+                    <span><strong>Core Web Vitals:</strong> LCP, FID/INP, and CLS performance inspection</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 1 Real Logos -->
+            <div class="mt-8 pt-5 border-t border-slate-800">
+              <div class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-3">Verified Tool Stack</div>
+              <div class="flex flex-wrap gap-2.5">
+                
+                <!-- Screaming Frog Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" fill="#0d1f0d" stroke="#5da92b" stroke-width="1.5"/>
+                    <path d="M9 13c0-3 2.5-4.8 5-4.3 1 .2 1.5.5 2 1 .5-.5 1-.8 2-1 2.5-.5 5 1.3 5 4.3 0 2-1 3.5-2.5 4.5C21.5 19 22 21 21 23c-1.2 2-3.8 2.5-5 2.5s-3.8-.5-5-2.5c-1-2-.5-4 .5-5.5C10 16.5 9 15 9 13z" fill="#6BB338"/>
+                    <circle cx="12" cy="12" r="2.2" fill="#FFFFFF"/>
+                    <circle cx="12" cy="12" r="1.1" fill="#000000"/>
+                    <circle cx="20" cy="12" r="2.2" fill="#FFFFFF"/>
+                    <circle cx="20" cy="12" r="1.1" fill="#000000"/>
+                    <ellipse cx="16" cy="19.5" rx="3.5" ry="2.2" fill="#081008"/>
+                  </svg>
+                  <span class="font-medium">Screaming Frog</span>
+                </span>
+
+                <!-- Google Search Console Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-search-console/default.svg" alt="Google Search Console" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Google Search Console</span>
+                </span>
+
+                <!-- Ahrefs Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/ahrefs/default.svg" alt="Ahrefs" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Ahrefs</span>
+                </span>
+
+                <!-- Ubersuggest Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#FF5B00"/>
+                    <path d="M7 6v6.8a5 5 0 0010 0V6h-2.8v6.8a2.2 2.2 0 01-4.4 0V6H7z" fill="#FFFFFF"/>
+                  </svg>
+                  <span class="font-medium">Ubersuggest</span>
+                </span>
+
+                <!-- PageSpeed Insights Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/pagespeed-insights/default.svg" alt="PageSpeed Insights" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">PageSpeed Insights</span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Performance Marketing -->
+          <div class="rounded-2xl p-7 card-glass transition-all duration-300 hover:shadow-glow-indigo flex flex-col justify-between group">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-xl border border-violet-500/20 group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-violet-950 text-violet-300 border border-violet-800/60">
+                  Paid Media
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold font-display text-white group-hover:text-accent-300 transition-colors">
+                  Performance Marketing &amp; Paid Ads
+                </h3>
+                <p class="text-slate-400 text-sm mt-1.5">
+                  High-converting PPC and social advertising strategies centered around minimizing Cost Per Acquisition (CPA).
+                </p>
+              </div>
+
+              <div class="space-y-2.5">
+                <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Key Capabilities</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-accent-400 text-xs"></i>
+                    <span><strong>Search PPC Campaigns:</strong> High-intent bidding strategies, ad copy testing &amp; quality score boost</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-accent-400 text-xs"></i>
+                    <span><strong>Negative Keyword Management:</strong> Proactive search query scrubbing to eliminate irrelevant spend</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-accent-400 text-xs"></i>
+                    <span><strong>Meta Funnel Ads:</strong> Retargeting architecture (prospecting, consideration, direct conversion)</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-accent-400 text-xs"></i>
+                    <span><strong>Budget Optimization:</strong> CBO/ABO distribution, frequency capping &amp; creative wear-out control</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-accent-400 text-xs"></i>
+                    <span><strong>Landing Page Alignment:</strong> Message-match between ad headlines and landing pages for higher conversions</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 2 Real Logos -->
+            <div class="mt-8 pt-5 border-t border-slate-800">
+              <div class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-3">Verified Tool Stack</div>
+              <div class="flex flex-wrap gap-2.5">
+                
+                <!-- Google Ads Manager Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-ads/default.svg" alt="Google Ads Manager" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Google Ads Manager</span>
+                </span>
+
+                <!-- Meta Ads Manager Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/meta/default.svg" alt="Meta Ads Manager" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Meta Ads Manager</span>
+                </span>
+
+                <!-- Meta Business Suite Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/meta/default.svg" alt="Meta Business Suite" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Meta Business Suite</span>
+                </span>
+
+                <!-- Google Keyword Planner Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-ads/default.svg" alt="Google Keyword Planner" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Google Keyword Planner</span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Local Search -->
+          <div class="rounded-2xl p-7 card-glass transition-all duration-300 hover:shadow-glow-indigo flex flex-col justify-between group">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl border border-emerald-500/20 group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                </div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800/60">
+                  Geo Targeting
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold font-display text-white group-hover:text-emerald-300 transition-colors">
+                  Local Search &amp; Map Pack Ranking
+                </h3>
+                <p class="text-slate-400 text-sm mt-1.5">
+                  Driving physical footfalls, phone calls, and localized website visits through disciplined local optimization.
+                </p>
+              </div>
+
+              <div class="space-y-2.5">
+                <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Key Capabilities</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                    <span><strong>Google Business Profile (GBP):</strong> Verification, primary category selection &amp; regular updates</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                    <span><strong>NAP Consistency:</strong> Name, Address, and Phone number synchronization across web properties</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                    <span><strong>Local Directory Citations:</strong> Submissions on high-authority regional and industry catalogs</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                    <span><strong>LocalBusiness Schema:</strong> Structured JSON-LD data markup for geo coordinates &amp; business hours</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                    <span><strong>Review Acquisition:</strong> Strategic reputation management &amp; keyword-rich review response plans</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 3 Real Logos -->
+            <div class="mt-8 pt-5 border-t border-slate-800">
+              <div class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-3">Verified Tool Stack</div>
+              <div class="flex flex-wrap gap-2.5">
+                
+                <!-- Google Business Profile Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 8l1.5-4h15L21 8H3z" fill="#4285F4"/>
+                    <path d="M3 8c0 1.1.9 2 2 2s2-.9 2-2H3z" fill="#34A853"/>
+                    <path d="M7 8c0 1.1.9 2 2 2s2-.9 2-2H7z" fill="#FBBC05"/>
+                    <path d="M11 8c0 1.1.9 2 2 2s2-.9 2-2h-4z" fill="#EA4335"/>
+                    <path d="M15 8c0 1.1.9 2 2 2s2-.9 2-2h-4z" fill="#4285F4"/>
+                    <path d="M19 8c0 1.1.9 2 2 2v0c1.1 0 2-.9 2-2h-4z" fill="#34A853"/>
+                    <rect x="4" y="10" width="16" height="10" rx="1" fill="#0A0F1D" stroke="#4285F4" stroke-width="1"/>
+                    <path d="M13.5 15h-2.5v-1.5h4c.1.4.1.8.1 1.2 0 1.8-1.2 3.1-3.1 3.1-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3c.9 0 1.6.3 2.2.9l-1 1c-.3-.3-.7-.5-1.2-.5-1 0-1.8.8-1.8 1.9s.8 1.9 1.8 1.9c.9 0 1.4-.5 1.5-1.4z" fill="#FFFFFF"/>
+                  </svg>
+                  <span class="font-medium">Google Business Profile</span>
+                </span>
+
+                <!-- Schema.org Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#0B61A4"/>
+                    <circle cx="7" cy="8" r="2.3" fill="#FFFFFF"/>
+                    <circle cx="17" cy="8" r="2.3" fill="#FFFFFF"/>
+                    <circle cx="12" cy="16" r="2.3" fill="#FF5C35"/>
+                    <path d="M8.5 9.5l3.8 5M15.5 9.5l-3.8 5M9.2 8h5.6" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round"/>
+                  </svg>
+                  <span class="font-medium">Schema.org (JSON-LD)</span>
+                </span>
+
+                <!-- Google Maps API Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-maps/default.svg" alt="Google Maps API" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Google Maps API</span>
+                </span>
+
+                <!-- Local Citations Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="5" fill="#0A0F1D" stroke="#F59E0B" stroke-width="1.2"/>
+                    <path d="M12 4l2.4 4.8 5.3.8-3.8 3.7 1 5.3-4.9-2.5-4.9 2.5 1-5.3-3.8-3.7 5.3-.8L12 4z" fill="#F59E0B"/>
+                    <circle cx="12" cy="11" r="2" fill="#0A0F1D"/>
+                  </svg>
+                  <span class="font-medium">Local Citations</span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Analytics & Creative -->
+          <div class="rounded-2xl p-7 card-glass transition-all duration-300 hover:shadow-glow-indigo flex flex-col justify-between group">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl border border-amber-500/20 group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-amber-950 text-amber-300 border border-amber-800/60">
+                  Data &amp; Creative
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold font-display text-white group-hover:text-amber-300 transition-colors">
+                  Analytics, Attribution &amp; Creative Workflows
+                </h3>
+                <p class="text-slate-400 text-sm mt-1.5">
+                  Translating user interactions into actionable growth numbers while feeding ad campaigns high-converting creatives.
+                </p>
+              </div>
+
+              <div class="space-y-2.5">
+                <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Key Capabilities</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+                    <span><strong>GA4 Attribution:</strong> Custom event parameters, lead form triggers &amp; exploration reports</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+                    <span><strong>Short-Form Video Scripting:</strong> Hook-Story-Offer reel frameworks for Instagram &amp; YouTube Shorts</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+                    <span><strong>Social Creatives:</strong> Attention-grabbing carousel graphics &amp; promotional banner design</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+                    <span><strong>AI Prompt Workflows:</strong> Leveraging LLMs for copy variations, audience brainstorming &amp; briefs</span>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-check text-amber-400 text-xs"></i>
+                    <span><strong>Conversion Rate Optimization:</strong> CTA button prominence, heatmaps &amp; copy clarity</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 4 Real Logos -->
+            <div class="mt-8 pt-5 border-t border-slate-800">
+              <div class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-3">Verified Tool Stack</div>
+              <div class="flex flex-wrap gap-2.5">
+                
+                <!-- Google Analytics 4 Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="14" width="4" height="7" rx="2" fill="#F9AB00"/>
+                    <rect x="10" y="8" width="4" height="13" rx="2" fill="#E37400"/>
+                    <rect x="18" y="3" width="4" height="18" rx="2" fill="#E37400"/>
+                    <path d="M4 14c0-4.418 3.582-8 8-8v0c4.418 0 8 3.582 8 8" stroke="#F9AB00" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                  <span class="font-medium">Google Analytics 4</span>
+                </span>
+
+                <!-- Canva Pro Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/canva/default.svg" alt="Canva Pro" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Canva Pro</span>
+                </span>
+
+                <!-- Figma Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/figma/default.svg" alt="Figma" class="w-4 h-4 object-contain" />
+                  <span class="font-medium">Figma</span>
+                </span>
+
+                <!-- ChatGPT / Gemini AI Logo Pill -->
+                <span class="tool-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs text-slate-200">
+                  <div class="flex items-center gap-1.5">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/openai-chatgpt/default.svg" alt="OpenAI (ChatGPT)" class="w-3.5 h-3.5 object-contain" />
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/gemini/default.svg" alt="Gemini" class="w-3.5 h-3.5 object-contain" />
+                  </div>
+                  <span class="font-medium">ChatGPT / Gemini AI</span>
+                </span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED CASE STUDIES SECTION -->
+    <section id="case-studies" class="py-24 bg-slate-900/50 border-t border-slate-800/80 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div class="space-y-3 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+              <i class="fa-solid fa-award"></i> Proven Client Impact
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
+              Featured Case Studies: AcademyHunt.com
+            </h2>
+            <p class="text-slate-400 text-base">
+              A comprehensive breakdown of technical SEO transformations, local business presence, and student acquisition campaigns executed during my executive role at Academy Hunt.
+            </p>
+          </div>
+          
+          <!-- Live badge -->
+          <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Target Domain: <strong class="text-white">AcademyHunt.com</strong></span>
+          </div>
+        </div>
+
+        <!-- Case Studies List -->
+        <div class="space-y-12">
+          
+          <!-- Case Study 1 -->
+          <article class="rounded-3xl card-glass border border-slate-800 p-8 lg:p-10 transition-all hover:border-brand-500/50 group">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              <div class="lg:col-span-8 space-y-6">
+                <div class="flex flex-wrap items-center gap-3">
+                  <span class="px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 text-xs font-semibold border border-indigo-500/20">
+                    Project 01 • SEO Audit
+                  </span>
+                  <span class="px-3 py-1 rounded-md bg-slate-800 text-slate-300 text-xs">
+                    Organic Performance &amp; Crawlability
+                  </span>
+                </div>
+
+                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white group-hover:text-brand-300 transition-colors">
+                  Complete Technical SEO &amp; On-Page Audit for AcademyHunt.com
+                </h3>
+
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Conducted an exhaustive technical health checkup and competitive search audit for the education platform to uncover indexing barriers, slow loading pages, and keyword deficits across core academic courses.
+                </p>
+
+                <!-- Detailed Execution Steps -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-brand-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-spider"></i> Screaming Frog Crawler Audit
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Deep crawled site to detect and eliminate broken 404 links, duplicate title tags, missing H1 elements, and non-optimized image alt attributes.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-brand-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-gauge-high"></i> Core Web Vitals Optimization
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Analyzed desktop &amp; mobile scores with PageSpeed Insights to diagnose heavy assets, reducing CLS layout shifts and optimizing LCP speeds.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-brand-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-tags"></i> Meta Tag &amp; Content Architecture
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Mapped unique, click-compelling title tags and value-driven meta descriptions incorporating primary student search phrases.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-brand-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-chart-line"></i> Competitor Keyword Discovery
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Utilized Ahrefs and Ubersuggest to uncover high-volume, low-difficulty keywords in college admissions and certificate training niches.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Real Logo Tags in Case Study 1 -->
+                <div class="flex flex-wrap gap-2.5 pt-2">
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 32 32" fill="none">
+                      <circle cx="16" cy="16" r="14" fill="#0d1f0d" stroke="#5da92b" stroke-width="1.5"/>
+                      <path d="M9 13c0-3 2.5-4.8 5-4.3 1 .2 1.5.5 2 1 .5-.5 1-.8 2-1 2.5-.5 5 1.3 5 4.3 0 2-1 3.5-2.5 4.5C21.5 19 22 21 21 23c-1.2 2-3.8 2.5-5 2.5s-3.8-.5-5-2.5c-1-2-.5-4 .5-5.5C10 16.5 9 15 9 13z" fill="#6BB338"/>
+                      <circle cx="12" cy="12" r="2.2" fill="#FFFFFF"/>
+                      <circle cx="12" cy="12" r="1.1" fill="#000000"/>
+                      <circle cx="20" cy="12" r="2.2" fill="#FFFFFF"/>
+                      <circle cx="20" cy="12" r="1.1" fill="#000000"/>
+                    </svg>
+                    Screaming Frog
+                  </span>
+                  
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-search-console/default.svg" alt="Google Search Console" class="w-3.5 h-3.5 object-contain" />
+                    Google Search Console
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/pagespeed-insights/default.svg" alt="PageSpeed Insights" class="w-3.5 h-3.5 object-contain" />
+                    PageSpeed Insights
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/ahrefs/default.svg" alt="Ahrefs" class="w-3.5 h-3.5 object-contain" />
+                    Ahrefs
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                      <rect width="24" height="24" rx="5" fill="#FF5B00"/>
+                      <path d="M7 6v6.8a5 5 0 0010 0V6h-2.8v6.8a2.2 2.2 0 01-4.4 0V6H7z" fill="#FFFFFF"/>
+                    </svg>
+                    Ubersuggest
+                  </span>
+                </div>
+              </div>
+
+              <!-- Metrics / Summary Box -->
+              <div class="lg:col-span-4 bg-slate-950 rounded-2xl border border-slate-800/80 p-6 space-y-5">
+                <div class="text-xs font-bold uppercase tracking-wider text-slate-400 pb-2 border-b border-slate-800 flex items-center justify-between">
+                  <span>Audit Impact</span>
+                  <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <div class="text-2xl font-bold font-display text-white text-emerald-400">0 Broken Links</div>
+                    <p class="text-xs text-slate-400 mt-0.5">Identified &amp; redirected all 4xx/3xx anomalies</p>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold font-display text-white">100% Validated</div>
+                    <p class="text-xs text-slate-400 mt-0.5">Canonical tags &amp; indexable page structures</p>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold font-display text-brand-400">+40% Faster</div>
+                    <p class="text-xs text-slate-400 mt-0.5">Diagnosed CWV bottlenecks for mobile indexation</p>
+                  </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800">
+                  <p class="text-[11px] text-slate-400 italic">
+                    "Delivered an exhaustive audit spreadsheet with prioritization roadmap for the engineering and content team."
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Case Study 2 -->
+          <article class="rounded-3xl card-glass border border-slate-800 p-8 lg:p-10 transition-all hover:border-emerald-500/50 group">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              <div class="lg:col-span-8 space-y-6">
+                <div class="flex flex-wrap items-center gap-3">
+                  <span class="px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
+                    Project 02 • Local SEO Strategy
+                  </span>
+                  <span class="px-3 py-1 rounded-md bg-slate-800 text-slate-300 text-xs">
+                    Maps &amp; Near-Me Discovery
+                  </span>
+                </div>
+
+                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white group-hover:text-emerald-300 transition-colors">
+                  Local SEO &amp; Google Business Profile Optimization for Academy Hunt
+                </h3>
+
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Engineered a comprehensive local presence for students searching for coaching and educational guidance in surrounding districts, maximizing discovery on Google Maps and Local Pack results.
+                </p>
+
+                <!-- Detailed Execution Steps -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-map-pin"></i> Full Google Business Profile Setup
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Verified and fully optimized business attributes, operating hours, high-resolution media, category choices, and service catalogs.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-id-card"></i> Strict NAP Uniformity &amp; Citations
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Synchronized Name, Address, and Phone numbers across education directories to build rock-solid citation authority and trust signals.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-code"></i> LocalBusiness Schema Markup
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Embedded structured JSON-LD code into website pages to help search spiders unambiguously recognize physical entity coordinates.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-route"></i> Map Action Tracking &amp; Calls
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Monitored user actions including "Get Directions", website visits, and direct telephone taps generated via Google Maps discovery.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Real Logo Tags in Case Study 2 -->
+                <div class="flex flex-wrap gap-2.5 pt-2">
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                      <path d="M3 8l1.5-4h15L21 8H3z" fill="#4285F4"/>
+                      <path d="M3 8c0 1.1.9 2 2 2s2-.9 2-2H3z" fill="#34A853"/>
+                      <path d="M7 8c0 1.1.9 2 2 2s2-.9 2-2H7z" fill="#FBBC05"/>
+                      <path d="M11 8c0 1.1.9 2 2 2s2-.9 2-2h-4z" fill="#EA4335"/>
+                      <path d="M15 8c0 1.1.9 2 2 2s2-.9 2-2h-4z" fill="#4285F4"/>
+                      <rect x="4" y="10" width="16" height="10" rx="1" fill="#0A0F1D" stroke="#4285F4" stroke-width="1"/>
+                    </svg>
+                    Google Business Profile
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                      <rect width="24" height="24" rx="5" fill="#0B61A4"/>
+                      <circle cx="7" cy="8" r="2.3" fill="#FFFFFF"/>
+                      <circle cx="17" cy="8" r="2.3" fill="#FFFFFF"/>
+                      <circle cx="12" cy="16" r="2.3" fill="#FF5C35"/>
+                      <path d="M8.5 9.5l3.8 5M15.5 9.5l-3.8 5" stroke="#FFFFFF" stroke-width="1.3"/>
+                    </svg>
+                    Schema.org (JSON-LD)
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-maps/default.svg" alt="Google Maps API" class="w-3.5 h-3.5 object-contain" />
+                    Google Maps API
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                      <rect width="24" height="24" rx="5" fill="#0A0F1D" stroke="#F59E0B" stroke-width="1.2"/>
+                      <path d="M12 4l2.4 4.8 5.3.8-3.8 3.7 1 5.3-4.9-2.5-4.9 2.5 1-5.3-3.8-3.7 5.3-.8L12 4z" fill="#F59E0B"/>
+                    </svg>
+                    Local Citations
+                  </span>
+                </div>
+              </div>
+
+              <!-- Metrics / Summary Box -->
+              <div class="lg:col-span-4 bg-slate-950 rounded-2xl border border-slate-800/80 p-6 space-y-5">
+                <div class="text-xs font-bold uppercase tracking-wider text-slate-400 pb-2 border-b border-slate-800 flex items-center justify-between">
+                  <span>Local Impact</span>
+                  <i class="fa-solid fa-map-location-dot text-emerald-400"></i>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <div class="text-2xl font-bold font-display text-emerald-400">Top 3 Rank</div>
+                    <p class="text-xs text-slate-400 mt-0.5">In localized educational search pack</p>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold font-display text-white">Consistent NAP</div>
+                    <p class="text-xs text-slate-400 mt-0.5">100% uniformity across top directories</p>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold font-display text-brand-400">Surge in Direct Calls</div>
+                    <p class="text-xs text-slate-400 mt-0.5">High intent student inquiries through GBP</p>
+                  </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800">
+                  <p class="text-[11px] text-slate-400 italic">
+                    "Transformed passive map visibility into active student discovery and consultation phone calls."
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Case Study 3 -->
+          <article class="rounded-3xl card-glass border border-slate-800 p-8 lg:p-10 transition-all hover:border-violet-500/50 group">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              
+              <div class="lg:col-span-8 space-y-6">
+                <div class="flex flex-wrap items-center gap-3">
+                  <span class="px-3 py-1 rounded-md bg-violet-500/10 text-violet-400 text-xs font-semibold border border-violet-500/20">
+                    Project 03 • Paid Media &amp; Social
+                  </span>
+                  <span class="px-3 py-1 rounded-md bg-slate-800 text-slate-300 text-xs">
+                    Multi-Channel Lead Funnels
+                  </span>
+                </div>
+
+                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white group-hover:text-accent-300 transition-colors">
+                  Performance Marketing &amp; Social Lead Gen for Academy Hunt
+                </h3>
+
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Deployed a dual-engine acquisition funnel combining intent-based Google Search Ads with interest-targeted Meta Ad campaigns and high-engagement social video content.
+                </p>
+
+                <!-- Detailed Execution Steps -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-violet-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-filter"></i> Google Search Ads &amp; Negative Keyword Scrub
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Structured exact and phrase match ad groups while aggressively adding negative keywords to block unrelated search queries and protect daily budgets.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-violet-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-brands fa-meta"></i> Meta Full-Funnel Retargeting
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Designed awareness-to-consideration ad creative funnels on Instagram &amp; Facebook targeting prospective students and concerned parents.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-violet-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-calendar-days"></i> Weekly Editorial Content Calendar
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Maintained a consistent posting schedule featuring educational tips, career pathways, and institution highlights to build social proof.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+                    <div class="text-xs font-semibold text-violet-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i class="fa-solid fa-video"></i> Viral Short-Form Reel Creation
+                    </div>
+                    <p class="text-xs text-slate-300 leading-normal">
+                      Authored compelling 30-second scripts focusing on student pain points, driving organic shares and lowering blended customer acquisition costs.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Real Logo Tags in Case Study 3 -->
+                <div class="flex flex-wrap gap-2.5 pt-2">
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google-ads/default.svg" alt="Google Ads Manager" class="w-3.5 h-3.5 object-contain" />
+                    Google Ads Manager
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/meta/default.svg" alt="Meta Ads Manager" class="w-3.5 h-3.5 object-contain" />
+                    Meta Ads Manager
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/meta/default.svg" alt="Meta Business Suite" class="w-3.5 h-3.5 object-contain" />
+                    Meta Business Suite
+                  </span>
+
+                  <span class="tool-pill text-xs px-2.5 py-1 rounded-lg text-slate-200 inline-flex items-center gap-1.5 font-medium">
+                    <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/canva/default.svg" alt="Canva Pro" class="w-3.5 h-3.5 object-contain" />
+                    Canva Pro
+                  </span>
+                </div>
+              </div>
+
+              <!-- Metrics / Summary Box -->
+              <div class="lg:col-span-4 bg-slate-950 rounded-2xl border border-slate-800/80 p-6 space-y-5">
+                <div class="text-xs font-bold uppercase tracking-wider text-slate-400 pb-2 border-b border-slate-800 flex items-center justify-between">
+                  <span>Campaign Impact</span>
+                  <i class="fa-solid fa-chart-line text-violet-400"></i>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <div class="text-2xl font-bold font-display text-violet-400">Reduced CPA</div>
+                    <p class="text-xs text-slate-400 mt-0.5">Drastic drop in wasted spend via negative KW scrubs</p>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold font-display text-white">Higher Quality Leads</div>
+                    <p class="text-xs text-slate-400 mt-0.5">Better student qualification through targeted copy</p>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold font-display text-emerald-400">Viral Engagement</div>
+                    <p class="text-xs text-slate-400 mt-0.5">Short-form video reels expanded organic reach</p>
+                  </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800">
+                  <p class="text-[11px] text-slate-400 italic">
+                    "Created an integrated acquisition loop where paid ads capture high-intent demand while reels nurture brand loyalty."
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="experience" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+            <i class="fa-solid fa-timeline"></i> Track Record
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
+            Experience &amp; Education Journey
+          </h2>
+          <p class="text-slate-400 text-base">
+            Professional roles, industry certifications, academic foundation, and multilingual fluency.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Experience & Certification Column (Left 7) -->
+          <div class="lg:col-span-7 space-y-8">
+            <h3 class="text-xl font-bold font-display text-white flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center text-sm">
+                <i class="fa-solid fa-briefcase"></i>
+              </span>
+              Work Experience &amp; Professional Training
+            </h3>
+
+            <!-- Timeline -->
+            <div class="relative pl-6 sm:pl-8 border-l-2 border-slate-800 space-y-12">
+              
+              <!-- Item 1: Academy Hunt Internship -->
+              <div class="relative group">
+                <!-- Dot indicator -->
+                <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-slate-950 group-hover:scale-125 transition-transform"></div>
+                
+                <div class="space-y-3">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-brand-500/10 text-brand-400 border border-brand-500/20">
+                      Aug 2026 – Oct 2026
+                    </span>
+                    <span class="text-xs text-slate-400">Bengaluru / Remote</span>
+                  </div>
+
+                  <div>
+                    <h4 class="text-xl font-bold text-white font-display">Digital Marketing Executive (Intern)</h4>
+                    <p class="text-brand-300 font-medium text-sm">Academy Hunt (AcademyHunt.com)</p>
+                  </div>
+
+                  <p class="text-slate-300 text-sm leading-relaxed">
+                    Spearheaded tactical digital initiatives encompassing complete technical crawler audits, on-page SEO enhancements, PPC campaign structuring, and conversion tracking.
+                  </p>
+
+                  <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+                    <li class="flex items-start gap-2">
+                      <i class="fa-solid fa-arrow-right text-brand-400 mt-1 text-[10px]"></i>
+                      <span>Executed full-site technical SEO audits utilizing Screaming Frog and Google Search Console.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i class="fa-solid fa-arrow-right text-brand-400 mt-1 text-[10px]"></i>
+                      <span>Configured high-converting search ad campaigns on Google Ads and structured audience funnels on Meta.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i class="fa-solid fa-arrow-right text-brand-400 mt-1 text-[10px]"></i>
+                      <span>Built conversion analytics reports in GA4 to quantify inquiry forms and phone clicks.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 2: Certification -->
+              <div class="relative group">
+                <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-accent-500 border-4 border-slate-950 group-hover:scale-125 transition-transform"></div>
+                
+                <div class="space-y-3">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-accent-500/10 text-accent-400 border border-accent-500/20">
+                      Professional Certification
+                    </span>
+                    <span class="text-xs text-slate-400">DMA Certified</span>
+                  </div>
+
+                  <div>
+                    <h4 class="text-xl font-bold text-white font-display">AI-based Digital Marketing Management Course</h4>
+                    <p class="text-accent-300 font-medium text-sm">Digital Market Academy, Bengaluru</p>
+                  </div>
+
+                  <p class="text-slate-300 text-sm leading-relaxed">
+                    Rigorous intensive training covering modern AI-assisted search marketing, prompt-assisted content generation, programmatic PPC budgeting, programmatic local listing optimization, and real-world campaign simulation.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Education & Language Matrix (Right 5) -->
+          <div class="lg:col-span-5 space-y-8">
+            <h3 class="text-xl font-bold font-display text-white flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-sm">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </span>
+              Academic Foundation &amp; Languages
+            </h3>
+
+            <!-- Education Card -->
+            <div class="p-6 rounded-2xl card-glass space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">
+                  2026 – 2027
+                </span>
+                <span class="text-xs text-slate-400">Undergraduate</span>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-bold text-white font-display">Bachelor of Arts (BA) in Economics</h4>
+                <p class="text-brand-300 text-sm font-medium mt-0.5">ARG Arts and Commerce College, Davangere</p>
+              </div>
+
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Strong focus on microeconomics, consumer behavior analysis, quantitative statistics, and market dynamics—providing a deep analytical foundation for pricing models, bidding mechanics, and customer acquisition costs.
+              </p>
+            </div>
+
+            <!-- Languages Card -->
+            <div class="p-6 rounded-2xl card-glass space-y-4">
+              <div class="flex items-center justify-between">
+                <h4 class="text-base font-bold text-white font-display flex items-center gap-2">
+                  <i class="fa-solid fa-language text-brand-400"></i> Language Fluency
+                </h4>
+                <span class="text-xs text-slate-400">Multi-regional reach</span>
+              </div>
+
+              <div class="space-y-3.5">
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span class="text-slate-200">Kannada</span>
+                    <span class="text-emerald-400">Native / Fluent</span>
+                  </div>
+                  <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-emerald-500 to-teal-400 h-full rounded-full w-full"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span class="text-slate-200">English</span>
+                    <span class="text-brand-400">Professional Working Proficiency</span>
+                  </div>
+                  <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-brand-500 to-accent-500 h-full rounded-full w-[85%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span class="text-slate-200">Hindi</span>
+                    <span class="text-violet-400">Working Proficiency</span>
+                  </div>
+                  <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                    <div class="bg-gradient-to-r from-violet-500 to-purple-400 h-full rounded-full w-[80%]"></div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[11px] text-slate-400 pt-2 border-t border-slate-800">
+                Capable of creating localized regional ad copy, community content, and customer communications across Karnataka and pan-India campaigns.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section id="contact" class="py-24 bg-mesh border-t border-slate-800 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Left: Info & Direct Call -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+              <i class="fa-solid fa-paper-plane"></i> Get In Touch
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-white tracking-tight">
+              Let’s Discuss Marketing Goals
+            </h2>
+            
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+              Whether you are hiring for a full-time digital marketing role, seeking an audit of your current SEO &amp; PPC performance, or want to scale customer acquisition—I'm ready to contribute immediately.
+            </p>
+
+            <!-- Direct Contact Information Cards -->
+            <div class="space-y-4 pt-2">
+              
+              <!-- Email Card -->
+              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-brand-500/50 transition-all flex items-center justify-between group">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-lg border border-brand-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-400">Direct Email</div>
+                    <a href="mailto:abhishekattikatti.17@gmail.com" class="text-sm sm:text-base font-semibold text-white hover:text-brand-300 transition-colors break-all">
+                      abhishekattikatti.17@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <button onclick="copyEmail()" id="copy-btn" class="p-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors text-xs" title="Copy email address" aria-label="Copy Email">
+                  <i class="fa-regular fa-copy" id="copy-icon"></i>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-emerald-500/50 transition-all flex items-center justify-between group">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg border border-emerald-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-400">Direct Phone / WhatsApp</div>
+                    <a href="tel:+918050832015" class="text-sm sm:text-base font-semibold text-white hover:text-emerald-300 transition-colors">
+                      +91 8050832015
+                    </a>
+                  </div>
+                </div>
+                <a href="https://wa.me/918050832015?text=Hi%20Abhishek,%20I%20saw%20your%20digital%20marketing%20portfolio." target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-emerald-950/60 hover:bg-emerald-900 text-emerald-300 border border-emerald-800/60 transition-colors text-xs flex items-center gap-1.5" title="Chat on WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span class="hidden sm:inline">WhatsApp</span>
+                </a>
+              </div>
+
+              <!-- Location Card -->
+              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-lg border border-violet-500/20">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">Current Location</div>
+                  <div class="text-sm sm:text-base font-semibold text-white">
+                    Bengaluru, Karnataka, India
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Right: Fast Interactive Inquiry Form -->
+          <div class="lg:col-span-6">
+            <div class="rounded-3xl card-glass border border-slate-800 p-8 sm:p-10 shadow-2xl relative">
+              <h3 class="text-xl font-bold font-display text-white mb-2">Send a Direct Message</h3>
+              <p class="text-xs text-slate-400 mb-6">
+                Fill out the quick note below and click submit to open your preferred mail client immediately.
+              </p>
+
+              <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                  <label for="name" class="block text-xs font-medium text-slate-300 mb-1.5">Your Name / Organization</label>
+                  <input type="text" id="name" required placeholder="e.g. Rahul Sharma or TechCorp" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" />
+                </div>
+
+                <div>
+                  <label for="email" class="block text-xs font-medium text-slate-300 mb-1.5">Your Email</label>
+                  <input type="email" id="email" required placeholder="e.g. name@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" />
+                </div>
+
+                <div>
+                  <label for="interest" class="block text-xs font-medium text-slate-300 mb-1.5">Primary Interest</label>
+                  <select id="interest" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors">
+                    <option value="Hiring for Digital Marketing Role">Full-time Digital Marketing Role</option>
+                    <option value="Technical SEO & Site Audit">Technical SEO &amp; Site Audit</option>
+                    <option value="Google & Meta Ads Strategy">Google &amp; Meta Ads Campaign</option>
+                    <option value="Local SEO & Google Business Profile">Local SEO &amp; Google Business Profile</option>
+                    <option value="General Consultation">General Inquiry / Consultation</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-xs font-medium text-slate-300 mb-1.5">Project or Role Details</label>
+                  <textarea id="message" rows="4" required placeholder="Briefly describe your requirements or hiring timeline..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-accent-600 hover:from-brand-500 hover:to-accent-500 text-white font-semibold text-sm shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane text-xs"></i>
+                  <span>Send Message via Email</span>
+                </button>
+              </form>
+
+              <!-- Quick notification feedback popup -->
+              <div id="toast-message" class="hidden absolute top-4 right-4 bg-emerald-950 border border-emerald-800 text-emerald-200 px-3.5 py-2 rounded-xl text-xs flex items-center gap-2 shadow-lg">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <span id="toast-text">Email copied to clipboard!</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CLEAN FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-900 py-10 relative z-10 text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-brand-600/30 text-brand-400 flex items-center justify-center font-bold text-xs">
+          A
+        </div>
+        <span class="text-slate-300 font-semibold font-display">Abhishek Ganeshappa Attikatti</span>
+        <span>— Digital Marketing Portfolio</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#hero" class="text-slate-400 hover:text-slate-200 transition-colors">Back to top</a>
+        <a href="mailto:abhishekattikatti.17@gmail.com" class="text-slate-400 hover:text-slate-200 transition-colors">Email</a>
+        <a href="tel:+918050832015" class="text-slate-400 hover:text-slate-200 transition-colors">Phone</a>
+      </div>
+
+      <div class="text-center sm:text-right">
+        &copy; <span id="current-year"></span> Abhishek Ganeshappa Attikatti. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile Hamburger Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isExpanded = mobileMenu.classList.contains('hidden');
+      if (isExpanded) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close mobile menu when a nav link is clicked
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Toast Notification helper
+    function showToast(msg) {
+      const toast = document.getElementById('toast-message');
+      const toastText = document.getElementById('toast-text');
+      toastText.textContent = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3000);
+    }
+
+    // Copy Email to Clipboard
+    function copyEmail() {
+      const email = 'abhishekattikatti.17@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        showToast('Email address copied!');
+        const icon = document.getElementById('copy-icon');
+        icon.classList.remove('fa-copy');
+        icon.classList.add('fa-check');
+        setTimeout(() => {
+          icon.classList.remove('fa-check');
+          icon.classList.add('fa-copy');
+        }, 2000);
+      }).catch(() => {
+        showToast('abhishekattikatti.17@gmail.com');
+      });
+    }
+
+    // Contact Form Handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent(`[Portfolio Inquiry] ${interest} - from ${name}`);
+      const body = encodeURIComponent(
+        `Hi Abhishek,\n\nName: ${name}\nEmail: ${email}\nTopic: ${interest}\n\nMessage:\n${message}\n\nSent via Portfolio Website`
+      );
+
+      // Trigger mailto client
+      window.location.href = `mailto:abhishekattikatti.17@gmail.com?subject=${subject}&body=${body}`;
+      showToast('Opening email client...');
+    }
+  </script>
+</body>
+</html>
